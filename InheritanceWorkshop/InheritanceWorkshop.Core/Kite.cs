@@ -10,11 +10,11 @@ namespace InheritanceWorkshop.Core
     {
         private double _b;
 
-        public Kite(string v, int l, double d1, double d2, double b) : base(v, l, d1, d2)
+        public Kite(string v, double a, double d1, double d2, double b) : base(v, a, d1, d2)
         {
             B = b;
             Name = "Kite";
-            A = l;
+            A = a;
             D1 = d1;
             D2 = d2;
         }

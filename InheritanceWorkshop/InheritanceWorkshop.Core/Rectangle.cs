@@ -10,7 +10,7 @@ namespace InheritanceWorkshop.Core
     {
         private double _b;
 
-        public Rectangle(string v, double b, double a) : base(v, a)
+        public Rectangle(string v, double a, double b) : base(v, a)
         {
             B = b;
             Name = "Rectangle";

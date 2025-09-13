@@ -11,12 +11,12 @@ namespace InheritanceWorkshop.Core
         private double _d1;
         private double _d2;
 
-        public Rhombus(string v, double l, double d1, double d2) : base(v, l)
+        public Rhombus(string v, double a, double d1, double d2) : base(v, a)
         {
             D1 = d1;
             D2 = d2;
             Name = "Rhombus";
-            A = l;
+            A = a;
         }
 
         public double D1
