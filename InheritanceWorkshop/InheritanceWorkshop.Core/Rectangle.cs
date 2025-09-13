@@ -6,17 +6,15 @@ using System.Threading.Tasks;
 
 namespace InheritanceWorkshop.Core
 {
-    public class Kite : Rhombus
+    public class Rectangle : Square
     {
         private double _b;
 
-        public Kite(string v, int l, double d1, double d2, double b) : base(v, l, d1, d2)
+        public Rectangle(string v, double b, double a) : base(v, a)
         {
             B = b;
-            Name = "Kite";
-            A = l;
-            D1 = d1;
-            D2 = d2;
+            Name = "Rectangle";
+            A = a;
         }
 
         public double B
@@ -25,7 +23,7 @@ namespace InheritanceWorkshop.Core
             set => _b = ValidateB(value);
         }
 
-        public override double GetArea() => (D1 * D2) / 2;
+        public override double GetArea() => A * B;
 
         public override double GetPerimeter() => 2 * (A + B);
 
@@ -33,7 +31,7 @@ namespace InheritanceWorkshop.Core
         {
             if (b < 0)
             {
-                throw new Exception($"Kite Error, the length {b}, cannot negative.");
+                throw new Exception($"Rectangle Error, the length {b}, cannot negative.");
             }
             return b;
         }
