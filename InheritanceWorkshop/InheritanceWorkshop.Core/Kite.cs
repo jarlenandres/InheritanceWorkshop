@@ -10,20 +10,32 @@ namespace InheritanceWorkshop.Core
     {
         private double _b;
 
-        public Kite(string v, int l, double a, double b, int v1) : base(v, l, a, b)
+        public Kite(string v, int l, double d1, double d2, double b) : base(v, l, d1, d2)
         {
             B = b;
             Name = "Kite";
+            A = l;
+            D1 = d1;
+            D2 = d2;
         }
 
-        public double B 
-        { 
-            get => _b; 
-            set => _b = value; 
+        public double B
+        {
+            get => _b;
+            set => _b = value;
         }
 
-        public override double GetArea() => (A * B) / 2;
+        public override double GetArea() => (D1 * D2) / 2;
 
-        public override double GetPerimeter() => 2 * (Math.Sqrt(Math.Pow(A / 2, 2) + Math.Pow(B / 2, 2)));
+        public override double GetPerimeter() => 2 * (A + B);
+
+        private double ValidateB(double b)
+        {
+            if (b < 0)
+            {
+                throw new Exception($"Kite Error, the length {b}, cannot negative.");
+            }
+            return b;
+        }
     }
 }
