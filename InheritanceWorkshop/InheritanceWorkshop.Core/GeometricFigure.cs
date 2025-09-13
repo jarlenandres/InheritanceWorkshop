@@ -13,7 +13,7 @@
         // Override ToString method
         public override string ToString()
         {
-            return $"{Name}\t\t=> Area.....: {GetArea(),16:N5}    Perimeter: {GetPerimeter(),20:N5}";
+            return $"{Name}\t\t => Area.....: {GetArea(),15:N5}\t Perimeter: {GetPerimeter(),15:N5}";
         }
     }
 }
