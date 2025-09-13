@@ -10,7 +10,7 @@ namespace InheritanceWorkshop.Core
     {
         private double _h;
 
-        public Parallelogram(string v, double b, double a, double h) : base(v, b, a)
+        public Parallelogram(string v, double a, double b, double h) : base(v, a, b)
         {
             H = h;
             Name = "Parallelogram";
