@@ -19,16 +19,16 @@ namespace InheritanceWorkshop.Core
         }
 
         // Public properties
-        public double A 
-        { 
-            get => _a; 
-            set => _a = ValidateA(value); 
+        public double A
+        {
+            get => _a;
+            set => _a = ValidateA(value);
         }
 
         // Methods
-        public override double GetArea() => A;
-        
-        public override double GetPerimeter() => Math.Sqrt(A) * 4;
+        public override double GetArea() => Math.Pow(A, 2);
+
+        public override double GetPerimeter() => A * 4;
 
         private double ValidateA(double a)
         {
@@ -36,7 +36,7 @@ namespace InheritanceWorkshop.Core
             {
                 throw new Exception($"Square Error, the length {a}, cannot negative.");
             }
-            return a * a;
+            return a;
         }
     }
 }

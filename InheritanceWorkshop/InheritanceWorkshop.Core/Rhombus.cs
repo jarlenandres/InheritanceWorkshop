@@ -11,26 +11,29 @@ namespace InheritanceWorkshop.Core
         private double _d1;
         private double _d2;
 
-        public Rhombus(string v, int l, double a, double b) : base(v, a)
+        public Rhombus(string v, double l, double d1, double d2) : base(v, l)
         {
-            D1 = a;
-            D2 = b;
+            D1 = d1;
+            D2 = d2;
             Name = "Rhombus";
+            A = l;
         }
 
-        public double D1 
-        { 
-            get => _d1; 
-            set => _d1 = ValidateD1(value); 
+        public double D1
+        {
+            get => _d1;
+            set => _d1 = ValidateD1(value);
         }
-        public double D2 
-        { 
-            get => _d2; 
-            set => _d2 = ValidateD2(value); 
+
+        public double D2
+        {
+            get => _d2;
+            set => _d2 = ValidateD2(value);
         }
+
         public override double GetArea() => (D1 * D2) / 2;
 
-        public override double GetPerimeter() => Math.Sqrt(Math.Pow(D1 / 2, 2) + Math.Pow(D2 / 2, 2)) * 4;
+        public override double GetPerimeter() => A * 4;
 
         private double ValidateD1(double d1)
         {

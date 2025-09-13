@@ -10,10 +10,10 @@ namespace InheritanceWorkshop.Core
     {
         private double _r;
 
-        public double R 
-        { 
-            get => _r; 
-            set => _r = ValidateR(value); 
+        public double R
+        {
+            get => _r;
+            set => _r = ValidateR(value);
         }
 
         public Circle(string v, double r)
@@ -23,9 +23,9 @@ namespace InheritanceWorkshop.Core
         }
 
         public override double GetArea() => Math.PI * Math.Pow(R, 2);
-        
+
         public override double GetPerimeter() => 2 * Math.PI * R;
-        
+
         private double ValidateR(double r)
         {
             if (r < 0)
