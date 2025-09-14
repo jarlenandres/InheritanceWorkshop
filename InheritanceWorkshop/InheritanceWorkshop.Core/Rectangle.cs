@@ -14,7 +14,6 @@ namespace InheritanceWorkshop.Core
         {
             B = b;
             Name = "Rectangle";
-            A = a;
         }
 
         public double B

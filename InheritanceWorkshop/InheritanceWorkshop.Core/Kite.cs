@@ -14,9 +14,6 @@ namespace InheritanceWorkshop.Core
         {
             B = b;
             Name = "Kite";
-            A = a;
-            D1 = d1;
-            D2 = d2;
         }
 
         public double B

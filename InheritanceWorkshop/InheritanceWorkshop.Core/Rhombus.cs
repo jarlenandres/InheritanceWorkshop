@@ -16,7 +16,6 @@ namespace InheritanceWorkshop.Core
             D1 = d1;
             D2 = d2;
             Name = "Rhombus";
-            A = a;
         }
 
         public double D1

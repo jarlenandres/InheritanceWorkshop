@@ -14,10 +14,6 @@ namespace InheritanceWorkshop.Core
         {
             D = d;
             Name = "Trapeze";
-            A = a;
-            B = b;
-            C = c;
-            H = h;
         }
 
         public double D

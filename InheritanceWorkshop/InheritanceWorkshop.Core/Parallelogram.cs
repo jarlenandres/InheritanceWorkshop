@@ -14,8 +14,6 @@ namespace InheritanceWorkshop.Core
         {
             H = h;
             Name = "Parallelogram";
-            B = b;
-            A = a;
         }
 
         public double H

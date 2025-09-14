@@ -16,8 +16,6 @@ namespace InheritanceWorkshop.Core
             C = c;
             H = h;
             Name = "Triangle";
-            B = b;
-            A = a;
         }
 
         public double C
